@@ -32,6 +32,9 @@ get_url() {
   awk -F';' -v name="$name" '$1 == name {print $2; exit}' "$CSV_FILE"
 }
 
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
 print_ascii_art() {
     local text_to_print="$1"
     local FONT="doom" 
