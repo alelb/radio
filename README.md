@@ -1,12 +1,15 @@
 # Radio player
 
 A simple bash script to play your favorite internet radio stations from command line.
+
 Built as a wrapper around the [mpv](https://mpv.io) media player.
 
 
 ## Requirements
 - mpv - The free, open source, and cross-platform media player.
 - fzf - The command line fuzzy-finder to handle interactive menu.
+- figlet - To print the radio station name with a bit of ascii art
+
 You must install them before using the `radio` player script.
 ```bash
 # Ubuntu/Debian

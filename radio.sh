@@ -32,11 +32,20 @@ get_url() {
   awk -F';' -v name="$name" '$1 == name {print $2; exit}' "$CSV_FILE"
 }
 
+print_ascii_art() {
+    local text_to_print="$1"
+    local FONT="doom" 
+
+    echo -e "${GREEN}"
+    figlet -f "$FONT" "$text_to_print"
+    echo -e "${NC}"
+}
+
 # fn to play the radio
 play_radio() {
   local name="$1"
   local url="$2"
-  echo "Listen to: $name"
+  print_ascii_art "$name"
   exec mpv --really-quiet --log-file=/dev/stderr "$url" 2>&1 | grep --line-buffered -E 'icy-name|icy-title|icy-genre'
 }
 
