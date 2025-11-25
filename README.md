@@ -13,13 +13,13 @@ Built as a wrapper around the [mpv](https://mpv.io) media player.
 You must install them before using the `radio` player script.
 ```bash
 # Ubuntu/Debian
-sudo apt install mpv fzf
+sudo apt install mpv fzf figlet
 
 # macOS
-brew install mpv fzf
+brew install mpv fzf figlet
 
 # Arch Linux
-sudo pacman -S mpv fzf
+sudo pacman -S mpv fzf figlet
 ```
 
 ## Quick start (local)
