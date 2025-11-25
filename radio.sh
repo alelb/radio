@@ -19,7 +19,7 @@ fi
 
 # fn to show help
 show_help() {
-  echo "Usage: $(basename $0) [radio_name]"
+  echo "Usage: $(basename "$0") [radio_name]"
   echo ""
   echo "If a radio name is not provided, it will show an interactive menu list."
   echo "Config file: $CSV_FILE"
